@@ -1,0 +1,29 @@
+{
+  "type": "module",
+  "name": "noss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --no-warnings --loader ts-node/esm ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.0"
+  },
+  "dependencies": {
+    "bip39": "^3.1.0",
+    "dotenv": "^16.3.1",
+    "nostr-tools": "^2.1.2",
+    "nostr-wasm": "^0.1.0",
+    "web3": "^4.3.0",
+    "winston": "^3.11.0",
+    "ws": "^8.16.0"
+  }
+}
