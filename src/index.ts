@@ -91,6 +91,7 @@ async function main() {
             } else {
                 // 寻找区块失败.
                 logger.error('寻找区块失败.')
+                await sleep(1000)
                 continue;
             }
 
