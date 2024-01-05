@@ -1,6 +1,6 @@
 import {parentPort, Worker, isMainThread, workerData} from "node:worker_threads";
 import {type Event, nip13} from 'nostr-tools'
-import {initNostrWasm} from 'nostr-wasm'
+import {initNostrWasm} from 'nostr-wasm-ng'
 import {fileURLToPath} from "node:url";
 
 export function getPow(hex: string): number {

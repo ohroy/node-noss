@@ -1,6 +1,6 @@
 import * as bip39 from 'bip39'
 import {type Event, nip13} from 'nostr-tools'
-import {initNostrWasm} from 'nostr-wasm'
+import {initNostrWasm} from 'nostr-wasm-ng'
 import Web3 from 'web3'
 import Ws from 'ws'
 import winston from 'winston'

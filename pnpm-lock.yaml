@@ -14,7 +14,7 @@ dependencies:
   nostr-tools:
     specifier: ^2.1.2
     version: 2.1.2(typescript@5.3.3)
-  nostr-wasm:
+  nostr-wasm-ng:
     specifier: ^0.1.0
     version: 0.1.0
   web3:
@@ -726,6 +726,10 @@ packages:
       mitata: 0.1.6
       nostr-wasm: 0.1.0
       typescript: 5.3.3
+    dev: false
+
+  /nostr-wasm-ng@0.1.0:
+    resolution: {integrity: sha512-fvATMPLxvuZUJuje5jBYEXUkaJX+/UIFLDldMbsIKjqicrp0Re9HEipQJJcQgY0LuATaVi39YvVaEFsKpP0B3w==}
     dev: false
 
   /nostr-wasm@0.1.0:
