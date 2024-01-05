@@ -96,8 +96,6 @@ async function main() {
             }
 
             const event: any = {
-                // "sig": "f2fd270575f435d1192ce07973a92fd213bd35238d3750209dc83aab5355bfcc79832ef4f9aa42dc1ffac1599aa8cb19d540dabba5a66b2f6eda1287204d22e1",
-                // "id": "0000023d48d8dbaab0597c1459c1895718ade4bf77559ad0a596a1da214fa0e8",
                 "kind": 1,
                 // "created_at": 1704363094,
                 "tags": [["p", "9be107b0d7218c67b4954ee3e6bd9e4dba06ef937a93f684e42f730a0c3d053c"],
@@ -117,7 +115,8 @@ async function main() {
                 privateKey
             ) as Event
             logger.log('info', '计算hash完成，用时%s ms', Date.now() - timer1)
-            finalizeEvent(eventWithNip13, privateKey)
+            // 由于刚算完 event_id， 这里没必要再重新计算，跳过hash，优化速度
+            finalizeEvent(eventWithNip13, privateKey, undefined, true)
             // console.log(eventWithNip13)
             // verifyEvent(eventWithNip13)
             // post
